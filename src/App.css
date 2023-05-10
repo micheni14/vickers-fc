@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.active-hover {
+  /* background-color: red; */
+  border-bottom: 2px solid #f6cb19;
+  color: #f6cb19;
+  padding: 10px 0px;
+  transition: ease-in-out;
+  transition-duration: 300ms;
+}

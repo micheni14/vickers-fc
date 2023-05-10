@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#gallery-grid::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+    left:-100px;
+    -webkit-box-flex: 1;  
+    /* background-color: #ff0000;  */
+    
+  }
+  
+  /* Add a thumb */
+  #gallery-grid::-webkit-scrollbar-thumb {
+    background: #292828;
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 770px) {
+    #gallery-grid::-webkit-scrollbar {
+        display: none;
+      }
+  }
+  
