@@ -19,53 +19,147 @@ const Navbar = () => {
   //sidebar Toggle
   // const [sidebar, setSidebar] = useState(false);
 
-  const links = [
-    { id: 1, label: "home" },
-    { id: 2, label: "about" },
-    { id: 3, label: "team" },
-    { id: 4, label: "gallery" },
-    { id: 5, label: "matchcenter" },
-    { id: 6, label: "contact" },
-  ];
+  // const links = [
+  //   { id: 1, label: "home" },
+  //   { id: 2, label: "about" },
+  //   { id: 3, label: "team" },
+  //   { id: 4, label: "matchcenter" },
+  //   { id: 5, label: "contact" },
+  // ];
 
+  // dropdown toggle
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   return (
     <div
       className={
         isScrolled
-          ? "h-[90px] fixed bg-white  w-full top-0"
-          : "h-[90px] bg-white"
+          ? "h-[110px] fixed bg-white  w-full top-0"
+          : "h-[110px] bg-white"
       }
     >
       <div className="h-full  w-mobile md:w-container mx-auto flex  justify-between items-center">
         <div>
           <img
             className=""
-            src={
-              isScrolled
-                ? "https://res.cloudinary.com/kelvin45/image/upload/c_scale,w_70/v1682497884/Vikers_logo-1-removebg-preview_pdzctv.png"
-                : "https://res.cloudinary.com/kelvin45/image/upload/c_scale,w_85/v1682497884/Vikers_logo-1-removebg-preview_pdzctv.png"
-            }
+            src="https://res.cloudinary.com/kelvin45/image/upload/c_scale,w_100/v1682497884/Vikers_logo-1-removebg-preview_pdzctv.png"
             alt=""
           />
         </div>
-        <ul className="flex  space-x-6 items-center">
-          {links.map((navlink) => (
+        <ul className="flex  space-x-6 items-center text-lg">
+          {/* {links.map((navlink) => (
             <div key={navlink.id}>
-              <li>
+              <li onClick={() => alert("clicked")}>
                 <Link
                   className="cursor-pointer capitalize"
                   activeClass="active-hover"
                   to={navlink.label}
                   spy={true}
                   smooth={true}
-                  offset={-9}
+                  offset={-80}
                   duration={500}
                 >
                   {navlink.label}
                 </Link>
               </li>
             </div>
-          ))}
+          ))} */}
+          <li>
+            <Link
+              className="cursor-pointer "
+              activeClass="active-hover"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="cursor-pointer "
+              activeClass="active-hover"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="cursor-pointer "
+              activeClass="active-hover"
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+            >
+              Team
+            </Link>
+          </li>
+          <li className="flex space-x-2 items-center relative">
+            <span
+              className="cursor-pointer"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            >
+              Match center
+            </span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d={
+                    isDropdownOpen
+                      ? "M4.5 15.75l7.5-7.5 7.5 7.5"
+                      : "M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  }
+                />
+              </svg>
+            </span>
+            <ul
+              className={
+                isDropdownOpen
+                  ? "  bg-white shadow-md border-t text-md rounded-lg absolute right-0 top-10 min-w-full w-[200px]"
+                  : "hidden"
+              }
+            >
+              <li className="px-3 py-1 hover:bg-gray-100 cursor-pointer  ">
+                Fixtures
+              </li>
+              <li className="px-3 py-1 hover:bg-gray-100 cursor-pointer  ">
+                League table
+              </li>
+              <li className="px-3 py-1 hover:bg-gray-100 cursor-pointer  ">
+                Results
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link
+              className="cursor-pointer "
+              activeClass="active-hover"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+            >
+              Contact
+            </Link>
+          </li>{" "}
         </ul>
       </div>
     </div>
