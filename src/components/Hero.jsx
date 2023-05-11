@@ -1,5 +1,8 @@
 import React from "react";
-import hero_image from "../assets/hero_img.jpg";
+// import hero_image from "../assets/hero_img.jpg";
+
+import image5 from "../assets/Gallery/image (5).jpeg"
+console.log("image5>>",image5);
 // import Navbar from "./Navbar";
 import { Link, animateScroll as scroll } from 'react-scroll';
 
@@ -10,7 +13,7 @@ const Hero = () => {
     id="home"
       className="py-4 text-white h-[600px]  bg-no-repeat bg-cover bg-left-top	 bg-blend-multiply"
       style={{
-        backgroundImage: `url(${hero_image})`,
+        backgroundImage: `url('${image5}')`,
         backgroundColor: "rgba(0, 0, 0,0.8)",
       }}
     >

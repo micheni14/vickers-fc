@@ -23,7 +23,7 @@ const Navbar = () => {
     { id: 1, label: "home" },
     { id: 2, label: "about" },
     { id: 3, label: "team" },
-    { id: 4, label: "gallery" },
+    // { id: 4, label: "gallery" },
     { id: 5, label: "matchcenter" },
     { id: 6, label: "contact" },
   ];

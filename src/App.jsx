@@ -11,10 +11,9 @@ import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Matchcenter from "./components/matchcenter/Matchcenter";
-
 import Results from "./components/matchcenter/Results";
-import leagueTable from "./components/matchcenter/LeagueTable";
 import LeagueTable from "./components/matchcenter/LeagueTable";
+import Fixtures from "./components/matchcenter/Fixtures";
 import Navbar from "./components/Navbar";
 function App() {
   return (
@@ -31,14 +30,13 @@ function App() {
           </Route>
         </Routes>
         <Sponsors />
-        <Gallery />
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Matchcenter />}>
             <Route index element={<Fixtures />} />
             <Route path="leaguetable" element={<LeagueTable />} />
             <Route path="results" element={<Results />} />
           </Route>
-        </Routes> */}
+        </Routes>
         <Footer />
       </div>
     </Router>
