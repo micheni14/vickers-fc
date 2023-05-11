@@ -33,7 +33,7 @@ const Gallery = () => {
                 <div className="grid  md:grid-cols-2  gap-4 md:h-[600px]" >
                 
                     <div>
-                        <img classname="w-full h-full "src={image1} alt="Gallery" />
+                        <img classname="w-full h-[560px] "src={image1} alt="Gallery" />
                     </div>
                             {/* Player's Div */}
                     <div className="grid grid-cols-4 md:grid-cols-4 gap-1.5 w-full  object-cover h-[600px] overflow-scroll md:h-98" id="gallery-grid">
