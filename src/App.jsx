@@ -9,7 +9,7 @@ import Mens from "./components/team/Mens";
 import Official from "./components/team/Official";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
+
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 
@@ -28,7 +28,6 @@ function App() {
           </Route>
         </Routes>
         <Sponsors />
-        <Gallery />
         <Contact />
         <Footer />
       </div>

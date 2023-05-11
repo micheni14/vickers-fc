@@ -19,13 +19,14 @@ const Navbar = () => {
   //sidebar Toggle
   // const [sidebar, setSidebar] = useState(false);
 
-  // const links = [
-  //   { id: 1, label: "home" },
-  //   { id: 2, label: "about" },
-  //   { id: 3, label: "team" },
-  //   { id: 4, label: "matchcenter" },
-  //   { id: 5, label: "contact" },
-  // ];
+  const links = [
+    { id: 1, label: "home" },
+    { id: 2, label: "about" },
+    { id: 3, label: "team" },
+    { id: 4, label: "gallery" },
+    { id: 5, label: "matchcenter" },
+    { id: 6, label: "contact" },
+  ];
 
   // dropdown toggle
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
