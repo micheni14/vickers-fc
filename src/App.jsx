@@ -27,8 +27,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Team />}>
             <Route index element={<Official />} />
+<<<<<<< HEAD
             <Route path="women" element={<Womens />} />   
             <Route path="men" element={<Mens />} />s
+=======
+            <Route path="women" element={<Womens />} />
+            <Route path="men" element={<Mens />} />
+>>>>>>> 9d6403a045c623d5b2ef3ca655a702db175a8103
           </Route>
           <Route>
           {/* <Route path="/" element={<Fixtures />} >

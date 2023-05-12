@@ -25,6 +25,7 @@ import image25 from "../assets/Gallery/image (25).jpeg";
 import image26 from "../assets/Gallery/image (26).jpeg";
 import image27 from "../assets/Gallery/image (27).jpeg";
 const Gallery = () => {
+<<<<<<< HEAD
     return (
     <div
     id="gallery">
@@ -51,110 +52,136 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
+=======
+  return (
+    <div id="gallery">
+      {/* <h1 class="text-4xl text-ourRed  text-center "> Gallery</h1> */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 ">
+        <div className="grid  md:grid-cols-2  md:gap-0 gap-4 h-full">
+          <div className=" h-[600px] flex  justify-center">
+            <img classname="h-full w-full " src={image1} alt="Gallery" />
+          </div>
+          {/* Player's Div */}
+          <div
+            className="grid grid-cols-4 md:grid-cols-4 gap-1.5 w-full  object-cover h-[600px] overflow-scroll md:h-[600px]"
+            id="gallery-grid"
+          >
+            {itemData.map((image) => (
+              <div
+                key={image.id}
+                className="h-46 flex justify-center bg-gray-200"
+              >
+                <img
+                  className="rounded h-full w-full object-cover "
+                  src={`${image.img}`}
+                  alt="Gallery"
+                />
+              </div>
+            ))}
+          </div>
+>>>>>>> 9d6403a045c623d5b2ef3ca655a702db175a8103
         </div>
-    );
-}
-const itemData =[
-
-    {
-        id:5,
-        img:`${image5}`
-    },
-    {
-        id:3,
-        img:`${image3}`
-    },
-    {
-        id:4,
-        img:`${image4}`
-    },
-    {
-        id:2,
-        img:`${image2}`
-    },
-    {
-        id:6,
-        img:`${image6}`
-    },
-    {
-        id:7,
-        img:`${image7}`
-    },
-    {
-        id:8,
-        img:`${image8}`
-    },
-    {
-        id:9,
-        img:`${image9}`
-    },
-    {
-        id:11,
-        img:`${image11}`
-    },
-    {
-        id:12,
-        img:`${image12}`
-    },
-    {
-        id:13,
-        img:`${image13}`
-    },
-    {
-        id:14,
-        img:`${image14}`
-    },
-    {
-    id:24,
-    img:`${image24}`
-    },
-    {
-        id:16,
-        img:`${image16}`
-    },
-    {
-        id:17,
-        img:`${image17}`
-    },
-    {
-        id:18,
-        img:`${image18}`
-    },
-    {
-        id:19,
-        img:`${image19}`
-    },
-    {
-        id:20,
-        img:`${image20}`
-    },
-    {
-        id:21,
-        img:`${image21}`
-    },
-    {
-        id:22,
-        img:`${image22}`
-    },
-    {
-        id:24,
-        img:`${image4}`
-    },
-    {
-        id:25,
-        img:`${image25}`
-    },
-    {
-        id:26,
-        img:`${image26}`
-    },
-    {
-        id:27,
-        img:`${image27}`
-    }
-    
-] 
-
-
+      </div>
+    </div>
+  );
+};
+const itemData = [
+  {
+    id: 5,
+    img: `${image5}`,
+  },
+  {
+    id: 3,
+    img: `${image3}`,
+  },
+  {
+    id: 4,
+    img: `${image4}`,
+  },
+  {
+    id: 2,
+    img: `${image2}`,
+  },
+  {
+    id: 6,
+    img: `${image6}`,
+  },
+  {
+    id: 7,
+    img: `${image7}`,
+  },
+  {
+    id: 8,
+    img: `${image8}`,
+  },
+  {
+    id: 9,
+    img: `${image9}`,
+  },
+  {
+    id: 11,
+    img: `${image11}`,
+  },
+  {
+    id: 12,
+    img: `${image12}`,
+  },
+  {
+    id: 13,
+    img: `${image13}`,
+  },
+  {
+    id: 14,
+    img: `${image14}`,
+  },
+  {
+    id: 24,
+    img: `${image24}`,
+  },
+  {
+    id: 16,
+    img: `${image16}`,
+  },
+  {
+    id: 17,
+    img: `${image17}`,
+  },
+  {
+    id: 18,
+    img: `${image18}`,
+  },
+  {
+    id: 19,
+    img: `${image19}`,
+  },
+  {
+    id: 20,
+    img: `${image20}`,
+  },
+  {
+    id: 21,
+    img: `${image21}`,
+  },
+  {
+    id: 22,
+    img: `${image22}`,
+  },
+  {
+    id: 24,
+    img: `${image4}`,
+  },
+  {
+    id: 25,
+    img: `${image25}`,
+  },
+  {
+    id: 26,
+    img: `${image26}`,
+  },
+  {
+    id: 27,
+    img: `${image27}`,
+  },
+];
 
 export default Gallery;

@@ -1,43 +1,41 @@
 import React from "react";
 // import hero_image from "../assets/hero_img.jpg";
 
-import image5 from "../assets/Gallery/image (5).jpeg"
-console.log("image5>>",image5);
+import image5 from "../assets/Gallery/image (5).jpeg";
+console.log("image5>>", image5);
 // import Navbar from "./Navbar";
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Hero = () => {
-  
   return (
     <div
+<<<<<<< HEAD
     id="/"
       className="py-4 text-white h-[600px]  bg-no-repeat bg-cover bg-left-top	 bg-blend-multiply"
+=======
+      id="home"
+      className="py-4 text-white h-[600px]  bg-no-repeat bg-cover bg-center 	 bg-blend-multiply"
+>>>>>>> 9d6403a045c623d5b2ef3ca655a702db175a8103
       style={{
         backgroundImage: `url('${image5}')`,
-        backgroundColor: "rgba(0, 0, 0,0.8)",
+        backgroundColor: "rgba(0, 0, 0,0.6)",
       }}
     >
-      {/* <Navbar /> */}
-      <div className="grid md:grid-cols-2 h-[400px]  items-center w-mobile md:w-container  mx-auto ">
-        <div className=""></div>
-        <div className="space-y-12">
-          <h2 className="text-6xl font-bold mb-5">All out, all game, all season</h2>
-
-          
-          <Link  
-          className="px-5 py-3 bg-ourYellow rounded-full"    
-          to="about" 
-          spy={true}
-          smooth={true} 
-          offset={-20} 
-          duration={500} >
-          Learn more
-        
-        </Link>
-    
-
-
-
+      <div className="flex text-center h-full  justify-center items-center  w-mobile md:w-container  mx-auto ">
+        <div className="space-y-14">
+          <h2 className="text-7xl font-extrabold mb-5">Together we punch</h2>
+          <div>
+            <Link
+              className="px-7 py-3.5 bg-ourYellow   text-lg  cursor-pointer rounded-full"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={500}
+            >
+              Learn more
+            </Link>
+          </div>
         </div>
       </div>
     </div>
