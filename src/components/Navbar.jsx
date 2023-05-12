@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { Link as Linkk } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +39,7 @@ const Navbar = () => {
           : "h-[110px] bg-white"
       }
     >
-      <div className="h-full  w-mobile md:w-container mx-auto flex  justify-between items-center">
+      <div className=" md:flex hidden h-full  w-mobile md:w-container mx-auto flex  justify-between items-center ">
         <div>
           <img
             className=""
@@ -68,7 +69,7 @@ const Navbar = () => {
             <Link
               className="cursor-pointer "
               activeClass="active-hover"
-              to="home"
+              to="/"
               spy={true}
               smooth={true}
               offset={-80}
@@ -95,10 +96,6 @@ const Navbar = () => {
               className="cursor-pointer "
               activeClass="active-hover"
               to="team"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
             >
               Team
             </Link>
@@ -137,14 +134,19 @@ const Navbar = () => {
                   : "hidden"
               }
             >
+              <Linkk to="/fixtures">
               <li className="px-3 py-1 hover:bg-gray-100 cursor-pointer  ">
-                Fixtures
+              Fixtures
               </li>
+              </Linkk>
+                
+              <Linkk to="/leaguetable">
               <li className="px-3 py-1 hover:bg-gray-100 cursor-pointer  ">
-                League table
+              League table
               </li>
+              </Linkk>
               <li className="px-3 py-1 hover:bg-gray-100 cursor-pointer  ">
-                Results
+              <Linkk to="/Results">Results</Linkk>
               </li>
             </ul>
           </li>
@@ -164,6 +166,7 @@ const Navbar = () => {
         </ul>
       </div>
     </div>
+    
   );
 };
 

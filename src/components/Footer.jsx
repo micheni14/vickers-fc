@@ -47,11 +47,19 @@ import React from "react";
 import { Link } from "react-scroll";
 
 const Footer = () => {
+  const footerLinks = [
+    { name: '', to: '' },
+    { name: 'Home', to: '/' },
+    { name: 'About', to: 'about' },
+    { name: 'Team', to: 'team' },
+    { name: 'Contact', to: 'contact' },
+  ]
+
   return (
     <div className="bg-[#6e1105] py-10 text-white">
-      <div className="w-mobile md:w-container mx-auto flex justify-between items-center">
-        <ul className="flex space-x-5">
-          <li>
+      <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
+        <ul className="flex flex-col items-start space-y-4 mb-4  md:flex-row md:space-x-6 md:items-center">
+          {/* <li>
             <Link
               className="cursor-pointer"
               activeClass="active-hover"
@@ -91,7 +99,23 @@ const Footer = () => {
             </Link>
           </li>
           <li>Match center</li>
-          <li>Contact</li>
+          <li>Contact</li> */}
+
+          {footerLinks.map((link, i) =>(
+            <li key={i} className="">
+              <Link
+                className="cursor-pointer m-0 p-0"
+                
+                to={link.to}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
+                {link.name}
+              </Link>
+          </li>
+          ))}
         </ul>
         <div className="space-x-3">
           <i class="bx bx-md bxl-instagram"></i>

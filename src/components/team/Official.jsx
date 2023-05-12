@@ -11,40 +11,40 @@ const Official = () => {
     
     <div>
       <h2 className="text-2xl font-bold">Club Officials</h2>
-      <div class="rounded overflow-hidden  lg:grid grid-cols-4 ">
+      <div class="grid grid-cols-2 md:grid-cols-4 md:gap-4 ">
       
-  <div className="p-1">
+        <div className="p-1">
 
-    <img className="rounded-md h-60 w-40" src={official1} alt="" />
-    <div className="flex flex-col">
-      <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">JONSTONE SEGERO</span>
-      <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">Assistant Head Coach</span>
-    </div>
-  </div>
-  <div className="p-1">
+          <img className="rounded-md h-60 w-40" src={official1} alt="" />
+          <div className="flex flex-col">
+            <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">JONSTONE SEGERO</span>
+            <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">Assistant Head Coach</span>
+          </div>
+        </div>
+        <div className="p-1">
 
-    <img className="rounded-md h-60 w-40" src={official2} alt="" />
-    <div className="flex flex-col">
-      <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">RODGERSODHIAMBO</span>
-      <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">Team Manager</span>
-    </div>
-  </div>
-  <div className="p-1">
+          <img className="rounded-md shadow shadow-xl h-60 w-40" src={official2} alt="" />
+          <div className="flex flex-col">
+            <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">RODGERSODHIAMBO</span>
+            <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">Team Manager</span>
+          </div>
+        </div>
+        <div className="p-1">
 
-<img className="rounded-md h-60 w-40" src={official3} alt="" />
-<div className="flex flex-col">
-  <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">HUMPHRREY MWITA</span>
-  <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">Team Doctor</span>
-</div>
-</div>
-<div className="p-1">
+      <img className="rounded-md shadow shadow-lg shadow-ourYellow h-60 w-40" src={official3} alt="" />
+      <div className="flex flex-col">
+        <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">HUMPHRREY MWITA</span>
+        <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">Team Doctor</span>
+      </div>
+        </div>
+        <div className="p-1">
 
-<img className="rounded-md h-60 w-40" src={official4} alt="" />
-<div className="flex flex-col">
-  <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">JOSE ARINGO</span>
-  <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">Head Coach</span>
-</div>
-</div>
+        <img className="rounded-md shadow shadow-md  h-60 w-40" src={official4} alt="" />
+        <div className="flex flex-col">
+          <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">JOSE ARINGO</span>
+          <span className="inline-block  rounded-full px-1 py-0 text-sm font-semibold text-gray-700 mr-2 mb-2">Head Coach</span>
+        </div>
+        </div>
 
 </div>
 

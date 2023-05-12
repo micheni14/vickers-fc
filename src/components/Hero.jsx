@@ -10,7 +10,7 @@ const Hero = () => {
   
   return (
     <div
-    id="home"
+    id="/"
       className="py-4 text-white h-[600px]  bg-no-repeat bg-cover bg-left-top	 bg-blend-multiply"
       style={{
         backgroundImage: `url('${image5}')`,
