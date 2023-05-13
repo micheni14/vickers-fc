@@ -71,7 +71,10 @@ const Contact = () => {
               </span>{" "}
               <span>Telephone</span>
             </h2>
-            <p>+254-7-123-456</p>
+            <p>+254726164609</p>
+            <p> +254740234157</p>
+            <p>+254120300095</p>
+            <p> +254740234157</p>
           </div>
           <div className="bg-white p-5 w-mobile md:w-1/2 mx-auto md:mx-0">
             <h2 className="flex space-x-1 font-bold">
@@ -122,7 +125,8 @@ const Contact = () => {
               </span>{" "}
               <span>Address</span>
             </h2>
-            <p>Example street,umoja house</p>
+            <p>Address: PO BOX 550 Nakuru Kenya</p>
+            <p>Homeground: 81 TK BN Grounds Nakuru, Kenya </p>
           </div>
         </div>
       </div>

@@ -4,11 +4,14 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import About from "../components/About";
 const History = () => (
   <div>
-    <div className="" id="about us ">
-      <div className="flex flex-col  justify-center items-center space-y-3 ">
+    <div className="pb-5" id="about">
+      <div className=" flex flex-col  justify-center items-center space-y-3 ">
         <h1 className="text-2xl text-ourRed  "> About us</h1>
-        <h2 className="text-2xl text-ourgray-400 "> Brief History</h2>
-  <p className="md:w-container w-mobile mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima odio quos perferendis pariatur optio voluptates voluptatum officia commodi. Soluta nam voluptas nulla porro odit qui doloremque accusamus similique quas excepturi! </p>
+        <h2 className="text-2xl text-ourgray-600 "> Brief History</h2>
+  <p className="md:w-container w-mobile mx-auto text:md ">Vickers Club is an exciting new football club set to make its mark in the League/Division. The club was founded in 1978 by a group of passionate football fans who wanted to bring a fresh approach to the game.
+The club's mission is to promote a positive, attacking style of football that inspires fans and players alike. They believe in nurturing young talent and developing players who can go on to achieve great things in the sport.
+Vickers has assembled a talented and experienced coaching staff, who bring a wealth of knowledge and expertise to the team. They have also recruited a group of talented players, who are eager to prove themselves on the pitch.
+Despite being a new club, Vickers has already attracted a loyal following of supporters who are excited to see what the future holds. With a clear vision and a commitment to excellence, this is a club that is poised to make a big impact on the football scene.</p>
         
 
       </div>

@@ -7,7 +7,7 @@ import kacc from "../assets/kacc_logo-removebg-preview.png";
 const Sponsors = () => {
   return (
     <div className="py-12 h-full bg-gray-50 ">
-      <div className="w-mobile container mx-auto   md:w-container  space-y-5 ">
+      <div className="w-mobile container mx-auto   md:w-container  space-y-4 ">
         <h2 className="text-2xl text-ourRed  ">Our sponsors</h2>
 
         <div className="flex flex-col items-center  space-y-10 md:flex-row md:space-x-10 md:items-center ">
@@ -17,10 +17,10 @@ const Sponsors = () => {
           <div className="">
             <img src={stima_sacco_logo} />
           </div>
-          <div className="">
+          <div className=" h-32 flex">
             <img className="" src={sahara_logo} alt="" />
           </div>
-          <div className=" ">
+          <div className=" h-44 flex">
             <img className="" src={kacc} alt="" />
           </div>
         </div>

@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 
 const navigation = [
   { name: 'Home', to: '/', current: true },
-  { name: 'About', to: 'about us', current: false },
+  { name: 'About', to: 'about', current: false },
   { name: 'Team', to: 'team', current: false },
   { name: 'Contact', to: 'contact', current: false },
 ]
@@ -17,32 +17,36 @@ function classNames(...classes) {
 
 export default function NavigationBar() {
   return (
-    <Disclosure as="nav" className="bg-white fixed w-full shadow">
+    <Disclosure as="nav" className=" fixed w-full   bg-white">
       {({ open }) => (
         <>
-          <div className="flex flex-items-start max-w-8xl px-2 sm:px-6 lg:px-12">
-            <div className="relative flex h-24 items-center  ">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden ">
+          <div className=" max-w-8xl px-2 sm:px-6 lg:px-12  ">
+            <div className="relative flex h-28 items-center   justify-between  w-full">
+              <div className=" inset-y-0 left-0 flex items-center sm:hidden ">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
+            
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="block h-10 w-10 text-black" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                      <Bars3Icon className="block h-10 w-10 text-black" aria-hidden="true" />
+                      
                   )}
                 </Disclosure.Button>
+              
               </div>
-              <div className="flex flex-1  sm:items-stretch sm:justify-end mt-6 ">
-                <div className="flex flex-shrink-0 ">
+              {/* <div className="flex flex-1 justify-between  sm:items-stretch sm:justify-end   bg-ourYellow p-2"> */}
+              <div className="flex  justify-between w-full items-center">
+                <div className="md:flex flex-shrink-0 hidden  ">
                       {/* Logo */}
                   <img
-                    className="flex justify-start hidden h-16 w-auto lg:block "
-                    src="https://res.cloudinary.com/kelvin45/image/upload/c_scale,w_200/v1682497884/Vikers_logo-1-removebg-preview_pdzctv.png"
+                  
+                    src="https://res.cloudinary.com/kelvin45/image/upload/c_scale,w_105/v1682497884/Vikers_logo-1-removebg-preview_pdzctv.png"
                     alt="Vikers"
                   />
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
+                <div className=" md:flex justify-between items-center hidden sm:ml-6 sm:block ">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link
@@ -63,62 +67,68 @@ export default function NavigationBar() {
                       </Link>
                     ))}
                   </div>
+                  <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    {/* Match Center dropdown */}
+                    <Menu as="div" className="relative ml-3">
+                      <div>
+                        <Menu.Button className="flex  ">
+                          <span className="text-slate-900  px-0 py-2 text-sm font-medium cursor-pointer hover:bg-white hover:text-ourYellow "> Match Center</span>
+
+                        </Menu.Button>
+                      </div>
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                      >
+                        <Menu.Items className="absolute right-0 z-50 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <Menu.Item>
+                            {({ active }) => (
+                              <NavLink
+                                to="fixtures"
+                                className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                              >
+                                fixtures
+                              </NavLink>
+                            )}
+                          </Menu.Item>
+                          <Menu.Item>
+                            {({ active }) => (
+                              <NavLink
+                                to="leaguetable"
+                                className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                              >
+                                League Table
+                              </NavLink>
+                            )}
+                          </Menu.Item>
+                          <Menu.Item>
+                            {({ active }) => (
+                              <NavLink
+                                to="results"
+                                className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                              >
+                                Results
+                              </NavLink>
+                            )}
+                          </Menu.Item>
+                        </Menu.Items>
+                      </Transition>
+                    </Menu>
+                  </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-
-                {/* Match Center dropdown */}
-                <Menu as="div" className="relative ml-3">
-                  <div>
-                    <Menu.Button className="flex ">
-                      <span className="text-slate-900  px-0 py-2 text-sm font-medium cursor-pointer hover:bg-white hover:text-ourYellow"> Match Center</span>
+              <div className="flex flex-shrink-0 md:hidden  ">
                       
-                    </Menu.Button>
-                  </div>
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-100"
-                    enterFrom="transform opacity-0 scale-95"
-                    enterTo="transform opacity-100 scale-100"
-                    leave="transition ease-in duration-75"
-                    leaveFrom="transform opacity-100 scale-100"
-                    leaveTo="transform opacity-0 scale-95"
-                  >
-                    <Menu.Items className="absolute right-0 z-50 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <NavLink
-                            to="fixtures"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                          >
-                            fixtures
-                          </NavLink>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <NavLink
-                            to="leaguetable"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                          >
-                            League Table
-                          </NavLink>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <NavLink
-                            to="results"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                          >
-                            Results
-                          </NavLink>
-                        )}
-                      </Menu.Item>
-                    </Menu.Items>
-                  </Transition>
-                </Menu>
-              </div>
+                  <img
+                    src="https://res.cloudinary.com/kelvin45/image/upload/c_scale,w_70/v1682497884/Vikers_logo-1-removebg-preview_pdzctv.png"
+                    alt="Vikers"
+                  />
+                </div>
             </div>
           </div>
           
@@ -126,7 +136,7 @@ export default function NavigationBar() {
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
-                  key={item.name}
+                  key={item.name} 
                   as={Link}
                   to={item.to}
                   spy={true}

@@ -1,46 +1,46 @@
 import React from "react";
-import official1 from "../../assets/Gallery/official (1).jpeg";
-import official2 from "../../assets/Gallery/official (2).jpeg";
-import official3 from "../../assets/Gallery/official (3).jpeg";
-import official4 from "../../assets/Gallery/official4.jpeg";
+import johnstone from "../../assets/Gallery/johnstone_segero.jpeg";
+import jose from "../../assets/Gallery/jose_aringo.jpeg";
+import rodgers from "../../assets/Gallery/rodgers_ odhiambo.jpeg";
+import humphrey from "../../assets/Gallery/humphrey- mwita.jpeg";
 
 const Official = () => {
   return (
     <div>
       <h2 className="text-2xl font-bold">Club Officials</h2>
-      <div class="rounded overflow-hidden  lg:grid grid-cols-4  ">
+      <div class=" grid  rounded overflow-hidden  md:grid-cols-4 grid-cols-2 md:gap-0 gap-3 ">
         <div className="p-1">
-          <img className="rounded-md h-60 w-40" src={official1} alt="" />
+          <img className="rounded-md h-60 w-40" src={johnstone} alt="" />
           <div className="flex flex-col space-y-2 ">
-            <span className="   font-semibold text-gray-700 ">
+            <span className="   font-semibold text-gray-700 text-sm md:text-md ">
               JONSTONE SEGERO
             </span>
-            <span className="  text-ourYellow  ">Assistant Head Coach</span>
+            <span className="  text-ourYellow text-sm md:text-md  ">Assistant Head Coach</span>
           </div>
         </div>
         <div className="p-1">
-          <img className="rounded-md h-60 w-40" src={official2} alt="" />
+          <img className="rounded-md h-60 w-40" src={jose} alt="" />
           <div className="flex flex-col space-y-2">
-            <span className="   font-semibold text-gray-700 ">
+            <span className="   font-semibold text-gray-700 text-sm md:text-md ">
               RODGERSODHIAMBO
             </span>
-            <span className="  text-ourYellow   ">Team Manager</span>
+            <span className="  text-ourYellow text-sm md:text-md   ">Team Manager</span>
           </div>
         </div>
         <div className="p-1">
-          <img className="rounded-md h-60 w-40" src={official3} alt="" />
+          <img className="rounded-md h-60 w-40" src={rodgers} alt="" />
           <div className="flex flex-col space-y-2">
-            <span className="   font-semibold text-gray-700 ">
-              HUMPHRREY MWITA
+            <span className="   font-semibold text-gray-700 text-sm md:text-md ">
+              HUMPHREY MWITA
             </span>
-            <span className="  text-ourYellow   ">Team Doctor</span>
+            <span className="  text-ourYellow text-sm md:text-md   ">Team Doctor</span>
           </div>
         </div>
         <div className="p-1">
-          <img className="rounded-md h-60 w-40" src={official4} alt="" />
+          <img className="rounded-md h-60 w-40" src={humphrey} alt="" />
           <div className="flex flex-col space-y-2">
-            <span className="   font-semibold text-gray-700 ">JOSE ARINGO</span>
-            <span className="  text-ourYellow   ">Head Coach</span>
+            <span className="   font-semibold text-gray-700 text-sm md:text-md ">JOSE ARINGO</span>
+            <span className="  text-ourYellow text-sm md:text-md   ">Head Coach</span>
           </div>
         </div>
       </div>

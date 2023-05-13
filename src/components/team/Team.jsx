@@ -20,7 +20,7 @@ const Team = () => {
   return (
     <div className="" id="team">
       <div className="w-mobile md:w-container mx-auto">
-        <div className="flex flex-col space-y-3 justify-center items-center">
+        <div className="flex flex-col space-y-3 justify-center items-center ">
           <h2 className="text-2xl text-ourRed">Club profile</h2>
           <p>This is the team behind the success of Vickers football team</p>
           <div className="flex space-x-3">

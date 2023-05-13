@@ -119,6 +119,7 @@ const Footer = () => {
         </ul>
         <div className="space-x-3">
           <i class="bx bx-md bxl-instagram"></i>
+          <i class="bx bx-md bxl-whatsapp"></i>
           <i class="bx bx-md bxl-twitter"></i>
           <i class="bx bx-md bxl-facebook-circle"></i>
           <i class="bx bx-md bxl-linkedin-square"></i>
