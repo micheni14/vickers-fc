@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 
 const navigation = [
   { name: 'Home', to: '/', current: true },
-  { name: 'About', to: 'about', current: false },
+  { name: 'About', to: 'about us', current: false },
   { name: 'Team', to: 'team', current: false },
   { name: 'Contact', to: 'contact', current: false },
 ]
@@ -21,7 +21,7 @@ export default function NavigationBar() {
       {({ open }) => (
         <>
           <div className="flex flex-items-start max-w-8xl px-2 sm:px-6 lg:px-12">
-            <div className="relative flex h-20 items-center  ">
+            <div className="relative flex h-24 items-center  ">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden ">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -38,7 +38,7 @@ export default function NavigationBar() {
                       {/* Logo */}
                   <img
                     className="flex justify-start hidden h-16 w-auto lg:block "
-                    src="https://res.cloudinary.com/kelvin45/image/upload/c_scale,w_100/v1682497884/Vikers_logo-1-removebg-preview_pdzctv.png"
+                    src="https://res.cloudinary.com/kelvin45/image/upload/c_scale,w_200/v1682497884/Vikers_logo-1-removebg-preview_pdzctv.png"
                     alt="Vikers"
                   />
                 </div>

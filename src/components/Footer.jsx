@@ -57,7 +57,7 @@ const Footer = () => {
 
   return (
     <div className="bg-[#6e1105] py-10 text-white">
-      <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
+      <div className="w-mobile md:w-container mx-auto flex flex-col items-center md:flex-row md:justify-between">
         <ul className="flex flex-col items-start space-y-4 mb-4  md:flex-row md:space-x-6 md:items-center">
           {/* <li>
             <Link

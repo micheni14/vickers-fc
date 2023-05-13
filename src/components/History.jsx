@@ -4,7 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import About from "../components/About";
 const History = () => (
   <div>
-    <div className="" id="about ">
+    <div className="" id="about us ">
       <div className="flex flex-col  justify-center items-center space-y-3 ">
         <h1 className="text-2xl text-ourRed  "> About us</h1>
         <h2 className="text-2xl text-ourgray-400 "> Brief History</h2>
