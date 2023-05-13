@@ -9,13 +9,8 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const Hero = () => {
   return (
     <div
-<<<<<<< HEAD
-    id="/"
-      className="py-4 text-white h-[600px]  bg-no-repeat bg-cover bg-left-top	 bg-blend-multiply"
-=======
-      id="home"
+      id="/"
       className="py-4 text-white h-[600px]  bg-no-repeat bg-cover bg-center 	 bg-blend-multiply"
->>>>>>> 9d6403a045c623d5b2ef3ca655a702db175a8103
       style={{
         backgroundImage: `url('${image5}')`,
         backgroundColor: "rgba(0, 0, 0,0.6)",

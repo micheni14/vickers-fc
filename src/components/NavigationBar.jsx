@@ -21,7 +21,7 @@ export default function NavigationBar() {
       {({ open }) => (
         <>
           <div className="flex flex-items-start max-w-8xl px-2 sm:px-6 lg:px-12">
-            <div className="relative flex h-20 items-center bg-ourRed ">
+            <div className="relative flex h-20 items-center  ">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden ">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">

@@ -25,34 +25,6 @@ import image25 from "../assets/Gallery/image (25).jpeg";
 import image26 from "../assets/Gallery/image (26).jpeg";
 import image27 from "../assets/Gallery/image (27).jpeg";
 const Gallery = () => {
-<<<<<<< HEAD
-    return (
-    <div
-    id="gallery">
-        {/* <h1 class="text-4xl text-ourRed  text-center "> Gallery</h1> */}
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 bg-gray-50 ">
-                <div className="grid  md:grid-cols-2  gap-4 md:h-[580px]" >
-                
-                    <div>
-                        <img classname="w-full h-full "src={image1} alt="Gallery" />
-                    </div>
-                            {/* Player's Div */}
-                    <div className="grid grid-cols-4 md:grid-cols-4 gap-1.5 w-full  object-cover h-[600px] overflow-scroll md:h-98" id="gallery-grid">
-                        
-                        {itemData.map((image) => (
-                        <div key={image.id} className="h-46 flex justify-center bg-gray-200">
-                            <img className="rounded h-full w-full object-cover "
-                    src={`${image.img}`}
-                        alt="Gallery"
-                            
-                            />
-                        </div>
-                        ))}
-                        
-                    </div>
-                </div>
-            </div>
-=======
   return (
     <div id="gallery">
       {/* <h1 class="text-4xl text-ourRed  text-center "> Gallery</h1> */}
@@ -79,7 +51,6 @@ const Gallery = () => {
               </div>
             ))}
           </div>
->>>>>>> 9d6403a045c623d5b2ef3ca655a702db175a8103
         </div>
       </div>
     </div>
