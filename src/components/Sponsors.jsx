@@ -10,17 +10,17 @@ const Sponsors = () => {
       <div className="w-mobile container mx-auto   md:w-container  space-y-4 ">
         <h2 className="text-2xl text-ourRed  ">Our sponsors</h2>
 
-        <div className="flex flex-col items-center  space-y-10 md:flex-row md:space-x-10 md:items-center ">
+        <div className=" block md:flex space-y-5 md:space-y-0  md:justify-between justify-center items-center">
           <div className="">
             {" "}
           </div>
-          <div className="">
+          <div className="h-24 flex justify-center">
             <img src={stima_sacco_logo} />
           </div>
-          <div className=" md:max-w-80 h-32 flex">
+          <div className=" h-24 flex justify-center">
             <img className="" src={sahara_logo} alt="" />
           </div>
-          <div className="- h-44 flex">
+          <div className="- h-36 flex justify-center">
             <img className="" src={kacc} alt="" />
           </div>
         </div>
