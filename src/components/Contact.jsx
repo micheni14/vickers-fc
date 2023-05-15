@@ -125,7 +125,7 @@ const Contact = () => {
               </span>{" "}
               <span>Address</span>
             </h2>
-            <p>Address: PO BOX 550 Nakuru Kenya</p>
+            <p>PO BOX 550 Nakuru Kenya</p>
             <p>Homeground: 81 TK BN Grounds Nakuru, Kenya </p>
           </div>
         </div>

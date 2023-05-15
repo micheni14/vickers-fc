@@ -9,38 +9,40 @@ const Official = () => {
     <div>
       <h2 className="text-2xl font-bold">Club Officials</h2>
       <div class=" grid  rounded overflow-hidden  md:grid-cols-4 grid-cols-2 md:gap-0 gap-3 ">
-        <div className="p-1">
-          <img className="rounded-md h-60 w-40" src={johnstone} alt="" />
-          <div className="flex flex-col space-y-2 ">
+      <div className="p-1">
+          <img className="rounded-md h-60 w-40" src={rodgers} alt="" />
+          <div className="flex flex-col space-y-2">
             <span className="   font-semibold text-gray-700 text-sm md:text-md ">
-              JONSTONE SEGERO
+            RODGERS ODHIAMBO
             </span>
-            <span className="  text-ourYellow text-sm md:text-md  ">Assistant Head Coach</span>
+            <span className="  text-ourYellow text-sm md:text-md   ">Team manager</span>
           </div>
         </div>
         <div className="p-1">
           <img className="rounded-md h-60 w-40" src={jose} alt="" />
           <div className="flex flex-col space-y-2">
             <span className="   font-semibold text-gray-700 text-sm md:text-md ">
-              RODGERSODHIAMBO
+            JOSE ARINGO
             </span>
-            <span className="  text-ourYellow text-sm md:text-md   ">Team Manager</span>
+            <span className="  text-ourYellow text-sm md:text-md   ">Head coach</span>
           </div>
         </div>
         <div className="p-1">
-          <img className="rounded-md h-60 w-40" src={rodgers} alt="" />
-          <div className="flex flex-col space-y-2">
+          <img className="rounded-md h-60 w-40" src={johnstone} alt="" />
+          <div className="flex flex-col space-y-2 ">
             <span className="   font-semibold text-gray-700 text-sm md:text-md ">
-              HUMPHREY MWITA
+              JONSTONE SEGERO
             </span>
-            <span className="  text-ourYellow text-sm md:text-md   ">Team Doctor</span>
+            <span className="  text-ourYellow text-sm md:text-md  ">Assistant Head coach</span>
           </div>
         </div>
+       
+      
         <div className="p-1">
           <img className="rounded-md h-60 w-40" src={humphrey} alt="" />
           <div className="flex flex-col space-y-2">
-            <span className="   font-semibold text-gray-700 text-sm md:text-md ">JOSE ARINGO</span>
-            <span className="  text-ourYellow text-sm md:text-md   ">Head Coach</span>
+            <span className="   font-semibold text-gray-700 text-sm md:text-md ">HUMPHREY MWITA</span>
+            <span className="  text-ourYellow text-sm md:text-md   ">Team doctor</span>
           </div>
         </div>
       </div>

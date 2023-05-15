@@ -21,7 +21,7 @@ function About() {
 </svg> */}
 
                     <div className="card-body">
-                        <h2 className="card-title text-black text-center text-extrabold pt-4 "> OurVision</h2>
+                        <h2 className="card-title text-black text-center text-extrabold pt-4 "> Our vision</h2>
                         <p className='text-md items-center p-2'>To be a club recognized for providing top-class training and
                             developing highly skillful and intelligent players capable of
                             competing at the highest levels of the game locally and
@@ -39,7 +39,7 @@ function About() {
 </svg> */}
 
                     <div className="card-body">
-                        <h2 className="card-title text-black text-center text-extrabold pt-4 "> OurMission</h2>
+                        <h2 className="card-title text-black text-center text-extrabold pt-4 "> Our mission</h2>
                         <p className='text-md items-center p-2'>To foster sportsmanship and ‘espirit de corps’ amongst the officers
                             and service members of Armoured Brigade and local civilian youths,
                             and provide an opportunity and a suitable platform for them to

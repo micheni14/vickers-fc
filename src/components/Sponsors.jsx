@@ -17,10 +17,10 @@ const Sponsors = () => {
           <div className="">
             <img src={stima_sacco_logo} />
           </div>
-          <div className=" h-32 flex">
+          <div className=" md:max-w-80 h-32 flex">
             <img className="" src={sahara_logo} alt="" />
           </div>
-          <div className=" h-44 flex">
+          <div className="- h-44 flex">
             <img className="" src={kacc} alt="" />
           </div>
         </div>
