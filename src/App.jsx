@@ -17,11 +17,14 @@ import NavigationBar from "./components/NavigationBar";
 
 function App() {
   return (
+
+    <div className="relative">
+
     <Router>
       {/* <Navbar /> */}
       
       <NavigationBar/>
-      <div className="space-y-16">
+      <div className="space-y-16 ">
         <Hero />
         <History />
         <Routes>
@@ -36,10 +39,24 @@ function App() {
         <Sponsors />
         <Contact />
         <Footer />
-        
-        
+
       </div>
-    </Router>
+      </Router>
+      <a   href="https://wa.me/254740234157"              target="_blank"
+            rel="noopener noreferrer">
+
+      <div className="fixed bottom-10 md:bottom-32 shadow-md border px-2 py-1 bg-white text-green-500 rounded-full flex space-x-2 items-center right-8">
+
+        
+        <span><i class="bx bx-md bxl-whatsapp"></i></span>
+<span>Chat with us</span>
+      </div>
+
+
+      </a>
+
+
+    </div>
   );
 }
 
