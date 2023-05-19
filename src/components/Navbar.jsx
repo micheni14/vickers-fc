@@ -39,7 +39,7 @@ const Navbar = () => {
           : "h-[110px] bg-white"
       }
     >
-      <div className=" md:flex hidden h-full  w-mobile md:w-container mx-auto flex  justify-between items-center ">
+      <div className=" md:flex hidden h-full  w-mobile md:w-container mx-auto justify-between items-center ">
         <div>
           <img
             className=""

@@ -42,7 +42,7 @@ const Official = () => {
           <img className="rounded-md h-60 w-40" src={humphrey} alt="" />
           <div className="flex flex-col space-y-2">
             <span className="   font-semibold text-gray-700 text-sm md:text-md ">HUMPHREY MWITA</span>
-            <span className="  text-ourYellow text-sm md:text-md   ">Team doctor</span>
+            <span className="  text-ourYellow text-sm md:text-md   ">Team doctor </span>
           </div>
         </div>
       </div>

@@ -8,7 +8,10 @@ const History = () => (
       <div className=" flex flex-col  justify-center items-center space-y-3 ">
         <h1 className="text-2xl text-ourRed  "> About us</h1>
         <h2 className="text-2xl text-ourgray-600 "> Brief History</h2>
-  <p className="md:w-container w-mobile mx-auto text:md ">Vickers Club is an exciting new football club set to make its mark in the League/Division. The club was founded in 1978 by a group of passionate football fans who wanted to bring a fresh approach to the game.
+        <p className="md:w-container w-mobile mx-auto text:md ">
+          <p>Vickers FC is a military formation team that has it's roots all the way back to 1978 when it was formed from the sister units of the Kenya Army Armoured Corps.
+The Name "Vickers" was adopted from "Vickers Main Battle Tank (VMBT)" which was the first main battle tank to be used by the Kenyan Army since 1978, the very same year when the football club was also formed</p>
+          Vickers Club is an exciting new football club set to make its mark in the League/Division. The club was founded in 1978 by a group of passionate football fans who wanted to bring a fresh approach to the game.
         The club's mission is to promote a positive, attacking style of football that inspires fans and players alike.
 <p> They believe in nurturing young talent and developing players who can go on to achieve great things in the sport.</p>
 Vickers has assembled a talented and experienced coaching staff, who bring a wealth of knowledge and expertise to the team. They have also recruited a group of talented players, who are eager to prove themselves on the pitch.
